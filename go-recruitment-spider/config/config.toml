@@ -1,0 +1,13 @@
+[redis]
+Addr = "localhost:6379"
+DB = 0
+
+[rabbit]
+Addr = "amqp://admin:admin@localhost:5672"
+
+[mongo]
+Addr = "mongodb://crawl:crawl@localhost:27017?authSource=crawl"
+DB = "crawl"
+
+[concurrency]
+Num=3

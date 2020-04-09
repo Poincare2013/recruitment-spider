@@ -1,0 +1,22 @@
+{
+  "name": "recruitment-spider",
+  "version": "1.0.0",
+  "description": "chrome spider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yorke",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "fs": "^0.0.1-security",
+    "mongodb": "^3.3.4",
+    "puppeteer": "^2.0.0",
+    "readline": "^1.3.0"
+  }
+}
