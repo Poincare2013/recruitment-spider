@@ -143,7 +143,7 @@ const crawl = async function (browser, target, keyWord, education, ages) {
         });
         //等5秒
         await page.waitFor(5000);
-        if (ariaDisabled == "true") {
+        if (ariaDisabled == "true" || curPage == 30) {
             break;
         }
         //看看有没有封禁
@@ -164,7 +164,8 @@ const crawl = async function (browser, target, keyWord, education, ages) {
     // await file.readSyncByRl(
     //     "# waiting validate, press enter after valid success:) >"
     // );
-
+    //等几秒,数据存储完了,结束
+    await page.waitFor(5000);
     page.close();
     mgo.client.close();
 };
